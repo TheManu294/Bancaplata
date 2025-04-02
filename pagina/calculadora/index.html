@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Préstamos Rápidos</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+
+    <!-- Logo -->
+    <div class="logo-container">
+        <img src="imagenes/logo_3.png" alt="Préstamos Colombia" class="logo">
+      </div>
+    <!-- Control único de monto -->
+
+    <div class="control-global">
+      <label>¿Cuánto necesitas? ($100,000 - $3'000,000 COP)</label>
+      <div class="input-group">
+        <span>$</span>
+        <input type="number" id="monto-global" min="100000" max="3000000" step="10000" value="500000">
+      </div>
+      <input type="range" id="monto-global-slider" min="100000" max="3000000" step="10000" value="500000">
+    </div>
+
+    <!-- Contenedor de calculadoras en fila -->
+    <div class="calculadoras-grid">
+      <!-- Calculadora 1: 1-8 días -->
+      <div class="calculadora">
+        <h3>1-8 días <span class="tasa">(20%)</span></h3>
+        <div class="resultado">
+          <p>Total a pagar:</p>
+          <h4 id="total-1">$600,000 COP</h4>
+        </div>
+        <button class="btn-pedir">Pedir ya</button>
+      </div>
+
+      <!-- Calculadora 2: 9-15 días -->
+      <div class="calculadora">
+        <h3>9-15 días <span class="tasa">(25%)</span></h3>
+        <div class="resultado">
+          <p>Total a pagar:</p>
+          <h4 id="total-2">$625,000 COP</h4>
+        </div>
+        <button class="btn-pedir">Pedir ya</button>
+      </div>
+
+      <!-- Calculadora 3: 16-30 días -->
+      <div class="calculadora">
+        <h3>16-30 días <span class="tasa">(30%)</span></h3>
+        <div class="resultado">
+          <p>Total a pagar:</p>
+          <h4 id="total-3">$650,000 COP</h4>
+        </div>
+        <button class="btn-pedir">Pedir ya</button>
+      </div>
+    </div>
+
+ <!--Quienes somos-->   
+ <section class="about-section">
+  <div class="about-container">
+    <div class="about-content">
+      <h2>Quiénes Somos</h2>
+      <div class="about-text">
+        <p>En <span class="brand">BancaPlata</span>, reinventamos el acceso al crédito en Colombia con soluciones rápidas, transparentes y seguras.</p>
+        
+        <div class="about-highlight">
+          <h3>Nuestra Misión</h3>
+          <p>Democratizar el acceso a capital de trabajo, eliminando barreras burocráticas y ofreciendo tasas justas adaptadas a necesidades reales de emprendedores y profesionales.</p>
+        </div>
+        
+        <div class="about-highlight">
+          <h3>Nuestra Ventaja</h3>
+          <ul>
+            <li>✅ <strong>Desembolsos en 15 minutos</strong></li>
+            <li>✅ <strong>Tecnología 100% colombiana</strong></li>
+            <li>✅ <strong>Sin garantías complicadas</strong></li>
+            <li>✅ <strong>Atención personalizada 24/7</strong></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    
+    <div class="about-values">
+      <h3>Nuestros Valores</h3>
+      <div class="values-grid">
+        <div class="value-card">
+          <div class="value-icon">⚡</div>
+          <h4>Agilidad</h4>
+          <p>Procesos optimizados para cuando el tiempo es dinero.</p>
+        </div>
+        
+        <div class="value-card">
+          <div class="value-icon">🔒</div>
+          <h4>Seguridad</h4>
+          <p>Tus datos protegidos con cifrado bancario.</p>
+        </div>
+        
+        <div class="value-card">
+          <div class="value-icon">💡</div>
+          <h4>Innovación</h4>
+          <p>Tecnología que simplifica tu vida financiera.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+    
+ <!--preguntas frecuentes-->
+ <section class="faq-section">
+  <h2>Preguntas Frecuentes</h2>
+  
+  <div class="faq-container">
+    <!-- Contenedor de preguntas -->
+    <div class="faq-slider">
+      <div class="faq-item active">
+        <h3>¿Cuál es el monto mínimo?</h3>
+        <p>El mínimo es $100,000 COP para todos los plazos.</p>
+      </div>
+      
+      <div class="faq-item">
+        <h3>¿Cómo se calculan los intereses?</h3>
+        <p>20% (1-8 días), 25% (9-15 días), 30% (16-30 días).</p>
+      </div>
+      
+      <!-- Más preguntas... -->
+    </div>
+    
+    <!-- Controles -->
+    <div class="faq-controls">
+      <button id="faq-prev">← Anterior</button>
+      <span id="faq-counter">1/5</span>
+      <button id="faq-next">Siguiente →</button>
+    </div>
+  </div>
+</section>  
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
