@@ -1,0 +1,383 @@
+/* Estilos base */
+body {
+  font-family: 'Arial', sans-serif;
+  background: #282828; /* Fondo gris claro */
+  padding: 20px;
+  color: #f5f5f5; /* Texto claro */
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Control global */
+.control-global {
+  background: #222; /* Fondo oscuro */
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.control-global label {
+  color: #f5f5f5;
+  display: block;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.input-group span {
+  margin-right: 10px;
+  font-weight: bold;
+  color: #D4AF37; /* Dorado oscuro */
+}
+
+input[type="number"] {
+  width: 150px;
+  padding: 8px;
+  border: 1px solid #444;
+  border-radius: 5px;
+  background: #333;
+  color: #fff;
+}
+
+input[type="range"] {
+  width: 100%;
+  margin-top: 10px;
+  background: #444;
+  height: 6px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 18px;
+  height: 18px;
+  background: #D4AF37; /* Dorado oscuro */
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* Grid de calculadoras */
+.calculadoras-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.calculadora {
+  background: #222; /* Fondo negro */
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  border: 1px solid #333;
+}
+
+.calculadora h3 {
+  color: #D4AF37; /* Dorado oscuro */
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.tasa {
+  color: #f5f5f5;
+  font-weight: bold;
+}
+
+.resultado {
+  margin: 15px 0;
+}
+
+.resultado p {
+  color: #aaa;
+  font-size: 14px;
+}
+
+.resultado h4 {
+  color: #D4AF37; /* Dorado oscuro */
+  font-size: 18px;
+  margin-top: 5px;
+}
+
+.btn-pedir {
+  background: #D4AF37; /* Dorado oscuro */
+  color: #121212;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+  transition: all 0.3s;
+}
+
+.btn-pedir:hover {
+  background: #c9a227; /* Dorado más claro */
+  transform: translateY(-2px);
+}
+
+/* Estilos para el contenedor de la imagen */
+.logo-container {
+  text-align: center; /* Centra la imagen */
+  margin-bottom: 20px; /* Espacio entre imagen y calculadora */
+}
+
+.logo {
+  max-width: 350px; /* Ajusta el ancho de la imagen */
+  height: auto; /* Mantiene la proporción */
+  border-radius: 8px; /* Opcional: bordes redondeados */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+/* Sección Quiénes Somos */
+.about-section {
+  background: #121212;
+  padding: 60px 20px;
+  color: #f5f5f5;
+}
+
+.about-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about-content h2 {
+  color: #D4AF37;
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.about-content h2::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 3px;
+  background: #D4AF37;
+  margin: 15px auto 0;
+}
+
+.about-text {
+  max-width: 800px;
+  margin: 0 auto 40px;
+  line-height: 1.8;
+  font-size: 1.1rem;
+}
+
+.brand {
+  color: #D4AF37;
+  font-weight: bold;
+}
+
+.about-highlight {
+  background: rgba(212, 175, 55, 0.1);
+  border-left: 3px solid #D4AF37;
+  padding: 20px;
+  margin: 30px 0;
+  border-radius: 0 8px 8px 0;
+}
+
+.about-highlight h3 {
+  color: #D4AF37;
+  margin-top: 0;
+}
+
+.about-highlight ul {
+  padding-left: 20px;
+}
+
+.about-highlight li {
+  margin-bottom: 10px;
+}
+
+/* Valores */
+.about-values {
+  margin-top: 60px;
+}
+
+.about-values h3 {
+  text-align: center;
+  color: #D4AF37;
+  font-size: 1.8rem;
+  margin-bottom: 40px;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.value-card {
+  background: #1e1e1e;
+  padding: 30px;
+  border-radius: 8px;
+  text-align: center;
+  transition: transform 0.3s;
+  border-bottom: 3px solid transparent;
+}
+
+.value-card:hover {
+  transform: translateY(-10px);
+  border-bottom-color: #D4AF37;
+}
+
+.value-icon {
+  font-size: 2.5rem;
+  color: #D4AF37;
+  margin-bottom: 15px;
+}
+
+.value-card h4 {
+  color: #D4AF37;
+  margin: 15px 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .about-content h2 {
+    font-size: 2rem;
+  }
+  
+  .values-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* FAQ Section */
+
+.faq-section {
+  background: #121212;
+  padding: 30px;
+  border-radius: 10px;
+  margin-top: 40px;
+  color: #f5f5f5;
+}
+
+.faq-slider {
+  position: relative;
+  min-height: 180px;
+  overflow: hidden;
+}
+
+.faq-item {
+  position: absolute;
+  width: 100%;
+  opacity: 0;
+  transform: translateX(30px);
+  transition: all 0.5s ease-in-out;
+  background: #1e1e1e;
+  padding: 20px;
+  border-radius: 8px;
+  border-left: 3px solid #D4AF37;
+}
+
+.faq-item.active {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Efectos al cambiar */
+.faq-item.leaving {
+  opacity: 0;
+  transform: translateX(-30px);
+}
+
+/* Controles */
+.faq-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.faq-controls button {
+  background: #D4AF37;
+  color: #121212;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.faq-controls button:hover {
+  background: #c9a227;
+}
+
+.faq-controls button:disabled {
+  background: #444;
+  cursor: not-allowed;
+}
+
+#faq-counter {
+  font-weight: bold;
+  color: #aaa;
+}
+/*mobil*/
+
+@media (max-width: 768px) {
+  .calculadoras-grid {
+    grid-template-columns: 1fr; /* Apila las calculadoras */
+    gap: 10px;
+  }
+  
+  .control-global {
+    padding: 15px;
+  }
+  
+  input[type="number"] {
+    width: 100%; /* Inputs full-width */
+  }
+}
+@media (max-width: 768px) {
+  /* Ajustes específicos para FAQ en móviles */
+  .faq-section {
+    padding: 20px 15px;
+    margin: 20px 0;
+  }
+  
+  .faq-slider {
+    min-height: 250px; /* Aumentamos la altura mínima */
+  }
+  
+  .faq-item {
+    padding: 15px;
+    min-height: 200px; /* Altura mínima garantizada */
+    overflow: visible; /* Permite que el contenido fluya */
+  }
+  
+  .faq-item h3 {
+    font-size: 18px; /* Tamaño reducido para títulos */
+    margin-bottom: 10px;
+  }
+  
+  .faq-item p {
+    font-size: 15px; /* Tamaño reducido para texto */
+    line-height: 1.5; /* Mejor espaciado */
+  }
+  
+  .faq-controls {
+    flex-direction: column; /* Botones en columna */
+    gap: 10px;
+  }
+  
+  .faq-controls button {
+    width: 100%; /* Botones a ancho completo */
+    padding: 10px;
+  }
+  
+  #faq-counter {
+    order: -1; /* Mueve el contador arriba */
+    margin-bottom: 10px;
+  }
+}
